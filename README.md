@@ -1,5 +1,9 @@
 # KSkyMusic
 
+<img width="519" alt="Screen Shot 2022-08-11 at 11 32 34 PM" src="https://user-images.githubusercontent.com/106979845/184280307-ea3fccdb-2e29-4787-ac56-39bf8b1eeeaa.png">
+
+KSkyMusic is a web and a possible mobile application that provides Korean song suggestions depending on the weather. The app will hold a database of Korean songs from Spotify.com. KSkyMusic will find your location and check the weather. It will then return 10 random music choices for that day, based on the weather condition. Users will be able to refresh the application, which should update to new songs if the weather were to change. I’ll create this application using Spring, Java, SQL, and React.
+
 This application was generated using JHipster 7.9.2, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v7.9.2](https://www.jhipster.tech/documentation-archive/v7.9.2).
 
 ## Project Structure
