@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Song.
+    -->
+    <changeSet id="20220819145816-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="album_id"
+                                 baseTableName="song"
+                                 constraintName="fk_song__album_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="album"/>
+
+        <addForeignKeyConstraint baseColumnNames="location_id"
+                                 baseTableName="song"
+                                 constraintName="fk_song__location_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="location"/>
+
+        <addForeignKeyConstraint baseColumnNames="song_id"
+                                 baseTableName="rel_song__artist"
+                                 constraintName="fk_rel_song__artist__song_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="song"/>
+
+        <addForeignKeyConstraint baseColumnNames="artist_id"
+                                 baseTableName="rel_song__artist"
+                                 constraintName="fk_rel_song__artist__artist_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="artist"/>
+    </changeSet>
+</databaseChangeLog>

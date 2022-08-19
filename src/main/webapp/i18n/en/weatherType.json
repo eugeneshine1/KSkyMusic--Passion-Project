@@ -1,0 +1,12 @@
+{
+  "kSkyMusicApp": {
+    "WeatherType": {
+      "null": "",
+      "SUNNY": "SUNNY",
+      "RAINY": "RAINY",
+      "CLOUDY": "CLOUDY",
+      "STORMY": "STORMY",
+      "WINDY": "WINDY"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+entity Location {
+	streetAddress String required,
+	postalCode String required,
+	city String required,
+	stateProvince String required,
+    weatherType WeatherType required
+}
+
+
+entity Artist {
+	name String required,
+    
+}
+
+
+entity Album {
+	songType String required,
+	title String required,
+	timeDuration Long required
+}
+
+entity Song {
+	songType String required,
+	title String required,
+	timeDuration Long required
+}
+
+enum WeatherType {
+    SUNNY, RAINY, CLOUDY, STORMY, WINDY
+}
+
+relationship ManyToMany {
+	Song{artist} to Artist{song}
+    
+}
+relationship ManyToOne {
+	Song{album(title)} to Album
+    Song {location (weatherType)} to Location {song (songType)}
+    Album{artist(name)} to Artist
+}
+
+service all with serviceImpl
