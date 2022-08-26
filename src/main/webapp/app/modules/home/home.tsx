@@ -1,6 +1,8 @@
 import './home.scss';
 
 import React from 'react';
+import MoreHome from 'app/shared/musicComponents/MoreHome';
+
 import { Link } from 'react-router-dom';
 import { Translate } from 'react-jhipster';
 import { Row, Col, Alert } from 'reactstrap';
@@ -18,7 +20,8 @@ export const Home = () => {
         </h2>
 
         <div>
-          <button>Search for Music</button>
+          <button type="button">Search for Music</button>
+          <MoreHome />
         </div>
       </Col>
     </Row>

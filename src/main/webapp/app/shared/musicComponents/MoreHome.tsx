@@ -1,8 +1,9 @@
-import './Spotify.css';
+import React from 'react';
+import './MoreHome.scss';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-function Spotify() {
+function More() {
   const CLIENT_ID = '338aa090e855479a904a404be73b7378';
   const REDIRECT_URI = 'http://localhost:8080';
   const AUTH_ENDPOINT = 'https://accounts.spotify.com/authorize';
@@ -60,9 +61,9 @@ function Spotify() {
   };
 
   return (
-    <div className="Spotify">
-      <header className="Spotify-header">
-        <h1>KSkyMusic</h1>
+    <div className="App">
+      <header className="App-header">
+        <h1>Artists Only</h1>
         {!token ? (
           <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}>
             Login to Spotify
@@ -86,4 +87,4 @@ function Spotify() {
   );
 }
 
-export default Spotify;
+export default More;
