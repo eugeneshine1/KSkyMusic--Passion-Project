@@ -54,7 +54,7 @@ function More() {
   const renderArtists = () => {
     return artists.map(artist => (
       <div key={artist.id}>
-        {artist.images.length ? <img width={'100%'} src={artist.images[0].url} alt="" /> : <div>No Image</div>}
+        {artist.images.length ? <img width={'75%'} src={artist.images[0].url} alt="" /> : <div>No Image</div>}
         {artist.name}
       </div>
     ));
@@ -63,7 +63,7 @@ function More() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Artists Only</h1>
+        <h1>KSkyMusic</h1>
         {!token ? (
           <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}>
             Login to Spotify
