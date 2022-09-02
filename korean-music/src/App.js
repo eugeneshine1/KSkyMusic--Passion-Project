@@ -12,8 +12,8 @@ const [songs,setSongs] = useState([
         album: "1, 2, 3 (feat. BIG Naughty)",
         track: "",
         year: "",
-        img_src: "~/Dev/KSkyMusic--Passion-project/korean-music/songs_images/1, 2, 3 (feat. BIG Naughty)_Cover (front)_e.jpg",
-        src: "~/Dev/KSkyMusic--Passion-project/korean-music/songs/1, 2, 3 (feat. BIG Naughty).mp3"
+        img_src: "./songs_images/1, 2, 3 (feat. BIG Naughty)_Cover (front) _e.jpg",
+        src: "./songs/1, 2, 3 (feat. BIG Naughty).mp3"
     },
     {
         title: "Cold World",
@@ -21,7 +21,7 @@ const [songs,setSongs] = useState([
         album: "Cold World",
         track: "",
         year: "",
-        img_src: "./songs_images/Cold World_Cover (front)_e.jpg",
+        img_src: "./songs_images/Cold World_Cover (front) _e.jpg",
         src: "./songs/Cold World.mp3"
     },
     {
@@ -30,17 +30,17 @@ const [songs,setSongs] = useState([
         album: "DAFT LOVE",
         track: "",
         year: "",
-        img_src: "./songs_images/DAFT LOVE (feat. DUT2 & msftz)_Cover (front)_e.jpg",
+        img_src: "./songs_images/DAFT LOVE (feat. DUT2 & msftz)_Cover (front) _e.jpg",
         src: "./songs/DAFT LOVE (feat. DUT2 & msftz).mp3"
     },
     {
-        title: "Flying",
+        title: "Flying (feat. BIG Naughty)",
         artist: "DAVII",
-        album: "Flying",
+        album: "Flying (feat. BIG Naughty)",
         track: "",
         year: "",
-        img_src: "./songs_images/Flying_Cover (front)_e.jpg",
-        src: "./songs/Flying.mp3"
+        img_src: "./songs_images/Flying (feat. BIG Naughty)_Cover (front) _e.jpg",
+        src: "./songs/Flying (feat. BIG Naughty).mp3"  
     },
     {
         title: "Freak",
@@ -48,7 +48,7 @@ const [songs,setSongs] = useState([
         album: "Grown Ass Kid",
         track: "",
         year: "",
-        img_src: "./songs_images/Freak_Cover (front)_e.jpg ",
+        img_src: "./songs_images/Freak_Cover (front) _e.jpg ",
         src: "./songs/Freak.mp3"
     },
     {
@@ -57,7 +57,7 @@ const [songs,setSongs] = useState([
         album: "MR. BAD (feat. Woo)",
         track: "",
         year: "",
-        img_src: "./songs_images/MR. BAD (feat. Woo)_Cover (front)_e.jpg",
+        img_src: "./songs_images/MR. BAD (feat. Woo)_Cover (front) _e.jpg",
         src: "./songs/MR. BAD (feat. Woo).mp3"
     },
     {
@@ -66,7 +66,7 @@ const [songs,setSongs] = useState([
         album: "BENZO",
         track: "",
         year: "",
-        img_src: "./songs_images/Sariru (feat. ron)_Cover (front)_e.jpg",
+        img_src: "./songs_images/Sariru (feat. ron)_Cover (front) _e.jpg",
         src: "./songs/Sariru (feat. ron).mp3"
     },
     {
@@ -75,7 +75,7 @@ const [songs,setSongs] = useState([
         album: "END OF PUBERTY",
         track: "",
         year: "",
-        img_src: "./songs_images/SECRET (feat. MELOH)_Cover (front)_e.jpg",
+        img_src: "./songs_images/SECRET (feat. MELOH)_Cover (front) _e.jpg",
         src: "./songs/SECRET (feat. MELOH).mp3"
     },
     {
@@ -84,7 +84,7 @@ const [songs,setSongs] = useState([
         album: "Somebody!",
         track: "",
         year: "",
-        img_src: "./songs_images/Somebody!_Cover (front)_e.jpg",
+        img_src: "./songs_images/Somebody!_Cover (front) _e.jpg",
         src: "./songs/Somebody!.mp3"
     },
 

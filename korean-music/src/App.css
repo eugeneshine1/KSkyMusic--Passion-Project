@@ -251,6 +251,7 @@ body {
 .nextsong-details p {
   display: flex;
   flex-direction: row;
+  /* padding: px; */
   margin-left: 20px;
   align-items: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8),
