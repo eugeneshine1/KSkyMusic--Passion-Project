@@ -22,7 +22,12 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background: url("./box.png") repeat 0 0;
+  background: linear-gradient(
+      rgba(64, 63, 63, 0.5),
+      rgba(11, 11, 11, 0.5)
+    ),
+    url("https://images7.alphacoders.com/373/373133.jpg");
+  background-size: cover;
   animation: background-scroll 6s infinite;
   animation-timing-function: linear;
 }
@@ -33,7 +38,7 @@ body {
   margin-top: 7rem;
   margin-right: auto;
   margin-left: auto;
-  max-width: 30rem;
+  max-width: 20 rem;
   background: #fff;
   border-radius: 1.25rem;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.19),
@@ -75,8 +80,8 @@ body {
   height: 100%;
   background: linear-gradient(
     to right,
-    rgba(211, 3, 32, 0.5),
-    rgba(211, 3, 32, 0.85)
+    rgba(135, 4, 191, 0.5),
+    rgba(135, 3, 194, 0.85)
   );
   border-radius: 0.25rem;
   overflow: hidden;
@@ -94,7 +99,7 @@ body {
 }
 .range:focus:after,
 .range:hover:after {
-  background: rgba(211, 3, 32, 0.95);
+  background: rgba(17, 109, 195, 0.95);
 }
 
 /* Controls */
@@ -120,14 +125,14 @@ body {
 }
 
 .play-btn:focus {
-  color: rgba(171, 2, 26, 0.95);
+  color: rgba(47, 189, 221, 0.95);
   opacity: 1;
   box-shadow: 0 6px 9px rgba(33, 33, 33, 0.1), 0 6px 16px rgba(33, 33, 33, 0.15);
 }
 
 .play-btn:hover {
   transform: scale(1.2);
-  color: rgba(171, 2, 26, 0.95);
+  color: rgba(38, 122, 168, 0.95);
   opacity: 1;
   box-shadow: 0 6px 9px rgba(33, 33, 33, 0.1), 0 6px 16px rgba(33, 33, 33, 0.15);
 }
@@ -143,14 +148,14 @@ body {
   transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
 }
 .skip-btn:focus {
-  color: rgba(171, 2, 26, 0.95);
+  color: rgba(119, 55, 164, 0.95);
   opacity: 1;
   box-shadow: 0 6px 9px rgba(33, 33, 33, 0.1), 0 6px 16px rgba(33, 33, 33, 0.15);
 }
 
 .skip-btn:hover {
   /* transform: scale(1.5); */
-  color: rgba(171, 2, 26, 0.95);
+  color: rgba(107, 46, 138, 0.95);
   opacity: 1;
   box-shadow: 0 6px 9px rgba(33, 33, 33, 0.1), 0 6px 16px rgba(33, 33, 33, 0.15);
 }
@@ -176,13 +181,13 @@ body {
 .details-artist {
   font-size: 0.75rem;
   font-weight: 300;
-  color: #666;
+  color: rgb(102, 102, 102);
 }
 
 .info__song {
   font-size: 1.15rem;
   font-weight: 400;
-  color: #d30320;
+  color: #85198b;
 }
 
 /* Footer */
@@ -199,7 +204,7 @@ body {
 }
 .list__link:focus,
 .list__link:hover {
-  color: #d30320;
+  color: #85198b;
 }
 
 .player__footer {
@@ -225,7 +230,9 @@ body {
 .text-anim {
   font-size: 23px;
   font-weight: 550;
-  color: black;
+  color: rgb(128, 80, 135);
+  text-shadow: 2px 2px 4px rgba(99, 41, 118, 0.8),
+    -2px -2px 4px rgba(167, 10, 228, 0.4);
   text-align: center;
   animation: effect 3s linear infinite;
   padding-bottom: 20px;
@@ -254,13 +261,14 @@ body {
   /* padding: px; */
   margin-left: 20px;
   align-items: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8),
-    -2px -2px 4px rgba(129, 129, 129, 0.4);
+  color: rgb(16, 175, 210);
+  text-shadow: 2px 2px 4px rgba(76, 62, 62, 0.8),
+    -2px -2px 4px rgba(27, 189, 217, 0.4);
 }
 
 /* Animation */
 
-@-webkit-keyframes background-scroll {
+/* @-webkit-keyframes background-scroll {
   100% {
     background-position: 50px 50px;
   }
@@ -279,4 +287,4 @@ body {
   100% {
     background-position: 50px 50px;
   }
-}
+} */
